@@ -7,7 +7,9 @@ final int GAMEOVER = 3;
 
 void setup() {
   size(800, 800);
-  mode = INTRO;
+  mode = INTRO ;
+  textAlign(CENTER, CENTER); //central text
+  rectMode(CENTER);
   
 }
 
@@ -23,6 +25,6 @@ void draw() {
   } else if (mode == GAMEOVER) {
     gameover();
   } else {
-  println("Error: Mode = " = mode);
+  println("Error: Mode = " + mode);
   }
 }
